@@ -25,3 +25,14 @@ jupyter --config-dir
 jupyter --data-dir
 jupyter --runtime-dir
 ```
+
+Symbolic or soft link (files or directories, more flexible and self documenting):
+```shell
+#     Source                             Link
+ln -s /home/myfolder/project /home/myfolder/xxx
+```
+Hard link (files only, less flexible and not self documenting):
+```shell
+#   Source                             Link
+ln /home/myfolder/project /home/myfolder/xxx
+```
