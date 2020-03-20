@@ -1,10 +1,9 @@
 Add/remove new kernel into Jupyter Notebook
 ```shell
-#Install ipykernel
-pip install ipykernel
-
 #Add
 source activate myenv  
+#Install ipykernel
+pip install ipykernel
 python -m ipykernel install --user --name <myenv> --display-name "Python (<myenv>)"
 
 #Remove
