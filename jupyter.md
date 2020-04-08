@@ -10,6 +10,11 @@ python -m ipykernel install --user --name <myenv> --display-name "Python (<myenv
 jupyter kernelspec uninstall <myenv>
 ``` 
 
+Rendering notebook with scrolling ability:
+```shell
+jupyter nbconvert <ntname>.ipynb --to slides --SlidesExporter.reveal_scroll=True
+``` 
+
 Common Directories and File Locations:
 
   * `JUPYTER_CONFIG_DIR` for config file location  
